@@ -1,0 +1,9 @@
+.blogss {
+    margin-left: 450px;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 40px 0;
+}
+

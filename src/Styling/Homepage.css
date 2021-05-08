@@ -1,0 +1,63 @@
+.home__page {
+    height: 76vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 450px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 50px rgb(214, 214, 214);
+    border-radius: 1vw;
+}
+
+.login__message {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__message > img {
+    width: 120px;
+    height: 115px;
+    margin: 0;
+    margin-left: 410px;
+}
+
+.login__message > h1 {
+    font-size: 100px;
+    width: 80%;
+    line-height: 1em;
+    margin: 10px auto;
+    margin-top: 0;
+    font-weight: 500;
+    letter-spacing: -4px;
+    color: rgb(223, 223, 223);
+}
+
+.login__message > p {
+    color: rgb(230, 230, 230);
+    padding: 15px 0;
+    line-height: 1.5em;
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+}
+
+.login__button {
+    width: 300px;
+    margin: 15px auto 0px auto;
+    padding: 15px 0;
+    border: none;
+    background: rgb(0, 0, 0);
+    font-family: "Inter";
+    color: rgb(238, 238, 238);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 3vw;
+}
+
+.login__button:hover {
+    background: rgb(54, 54, 54);
+}

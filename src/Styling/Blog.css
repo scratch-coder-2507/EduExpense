@@ -1,0 +1,123 @@
+.blog__page {
+    margin-top: 100px;
+    padding: 30px 170px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-image: url("http://getwallpapers.com/wallpaper/full/7/4/c/178016.jpg");*/
+    background-image: url("http://getwallpapers.com/wallpaper/full/4/d/e/615233.jpg");
+    
+}
+
+.blog__page__header {
+    display: flex;
+    flex: 0;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -1px;
+    font-size: 45px;
+    color: white;
+}
+
+.blogs {
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 40px 0;
+}
+
+.blog {
+    width: 416px;
+    transition: 250ms linear;
+    border-radius: 2vw;
+    min-width: 300px;
+    margin: auto;
+    background: rgb(87, 86, 86);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.blog:hover {
+    transform: scale(1.05);
+}
+
+.blog > div {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px 0px 30px;
+}
+
+.blog > img {
+    width: 100%;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+}
+
+.sourceName > span {
+    display: inline;
+    background: rgb(255, 238, 0);
+    font-size: 11px;
+    padding: 5px 6px;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.sourceName > p {
+    font-size: 10px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.sourceName {
+    display: flex;
+    align-items: center;
+}
+
+.blog > div > h1 {
+    font-size: 25px;
+    letter-spacing: -0.6px;
+    line-height: 1.3em;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.blog > div > p {
+    font-size: 13px;
+    line-height: 1.6em;
+    color: rgb(187, 185, 185);
+    padding-bottom: 30px;
+}
+
+.blog > div > h4 {
+    padding-left: 270px;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: rgb(224, 224, 224);
+    padding-bottom: 15px;
+
+}
+
+.no__blogs {
+    border-radius: 1vw;
+    margin-top: 250px;
+    margin-left: 450px;
+    padding: 30px;
+    height: 130px;
+    width: 100%;
+    background: rgb(114, 114, 114);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: rgb(236, 236, 236);
+    box-shadow: 0px 0px 30px rgb(150, 150, 150);
+}
+
+.loading {
+    margin-left: 670px;
+    margin-top: 300px;
+    color: white;
+}

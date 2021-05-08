@@ -1,56 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import Homepage from './components/Homepage';
+import './App.css';
+import Navbar from './components/Navbar';
+import Blog from './components/Blog';
+import { selectSignedIn } from './features/userSlice';
+import { useSelector } from 'react-redux';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Profile from './components/Profile';
+import Page from './components/Page';
+
 
 function App() {
+  const isSignedIn = useSelector(selectSignedIn);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    //BEM convention
+    <div className="app">
+      <Router>
+        <Switch>
+          <Route path="/profile">
+              <Profile/>
+          </Route>
+          <Route path="/page">
+              <Page/>
+          </Route>
+          <Route path="/">
+            <Navbar/>
+            <Homepage/>
+            {isSignedIn && <Blog/>}
+          </Route>
+        </Switch>
+      </Router>
+      
     </div>
   );
 }

@@ -1,0 +1,17 @@
+.navbar {
+    top: 0;
+    position: fixed;
+    justify-content: space-between;
+}
+
+.logout__button {
+    margin-right: 80px;
+}
+
+.notSignedIn {
+    margin-right: 80px;
+}
+
+.navbar__header {
+    margin-left: -80px;
+}
